@@ -1,7 +1,8 @@
 doctype html
-html
+html(ng-app="simpleApp")
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+    script(src="/javascripts/polyfills.js")
+    script(src="/javascripts/ng1.js")
