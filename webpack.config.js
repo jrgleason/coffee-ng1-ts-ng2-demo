@@ -7,7 +7,7 @@ function root(args) {
     return path.join.apply(path, [_root].concat(args));
 }
 var old = glob.sync([
-  './dependencies/ng1.js',
+  './dependencies/ng1.coffee',
   './src/main/ng1/**/*.coffee',
 ]);
 var update = glob.sync([
