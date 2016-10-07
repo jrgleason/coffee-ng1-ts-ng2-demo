@@ -14,8 +14,7 @@ module.exports = {
     context: __dirname,
     entry: {
         polyfills: './dependencies/polyfills.ts',
-        ngnew: update,
-        ngold: old
+        ng: old.concat(update),
     },
     resolve: {
         extensions: ['', '.ts', '.coffee', '.html', '.js']
@@ -34,7 +33,7 @@ module.exports = {
     devtool: '#inline-source-map',
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            names: ['ngold', 'ngnew', 'polyfills'],
+            names: ['ng', 'polyfills'],
             minChunks: Infinity
         })
     ]
