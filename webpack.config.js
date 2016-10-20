@@ -9,6 +9,7 @@ var update = glob.sync([
   './dependencies/ng2.ts',
   './src/main/ng2/**/*.ts',
   './src/main/ng2/**/*.html',
+  './src/main/es2015/**/*.js'
 ]);
 module.exports = {
     context: __dirname,
